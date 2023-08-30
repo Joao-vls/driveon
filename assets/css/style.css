@@ -1,0 +1,375 @@
+@charset "UTF-8";
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+/* cabeca */
+header {
+    background-color: #ffffff;
+    height: 50px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+header nav {
+    margin-left: 4%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+
+}
+
+header nav a {
+    color: #5a2481;
+    margin: 0 4%;
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+.siglog {
+    position: absolute;
+    right: 0;
+}
+
+.logo {
+    background-image: url(../imagens/lay/logo-teste-programador.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 5px;
+    min-width: 120px;
+    height: 40px;
+    cursor: pointer;
+    margin: 0;
+}
+
+.logh,
+.sigh {
+    cursor: pointer;
+    width: 80px;
+    height: 25px;
+    border: none;
+    background-color: transparent;
+    transition-duration: 1s;
+    border-radius: 5px;
+    margin: 0 5px;
+}
+
+.sigh {
+    color: #4c6fee;
+    border: #4c6fee5f 1px solid;
+}
+
+.sigh:hover {
+    background-color: #4c6fee5f;
+}
+
+.logh {
+    background-image: url(../imagens/lay/icone-login-teste-programador.png);
+    background-repeat: no-repeat;
+    background-size: 13px 17px;
+    background-position: left;
+    color: #5a2481;
+}
+
+.logh:hover {
+    border: #5a24815f 1px solid;
+}
+
+/* principal */
+
+main {
+    margin: 10px 70px 0 70px;
+    position: relative;
+    padding-bottom: 60em;
+    display: flex;
+    flex-direction: column;
+}
+.espacoCont{
+    width: calc(100% + 70px);
+    margin-top: 100px;
+    height: 480px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+}
+.espContL{
+    width: calc(100% - 70px);
+
+}
+.conteudos {
+    width: 27rem;
+    color: #8a869f;
+    margin: 110px 0 0 0;
+    z-index: 5;
+    justify-content: center;
+}
+
+.conteudos a {
+    color: #2579f6;
+    font-size: 15px;
+    position: relative;
+}
+.linhaReta {
+    width: 120px;
+    height: 10px;
+    background-color: #2cdef8;
+    position: relative;
+    margin: 20px 0 80px 0;
+}
+.linhaReta::after {
+    content: '';
+    width: 40px;
+    height: 10px;
+    background-color: #7d21e8;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.lr{background-color: #ffffff;}
+.lr::after{background-color: #e1defd;}
+.end {align-self: flex-end;}
+.dowButton{
+    width: 110px;
+    padding-left: 40px;
+    height: 40px;
+    background-color: #000000;
+    border: none;
+    border-radius: 5px;
+    margin-right: 30px;
+    color: #ffffff;
+    text-align: start;
+    cursor: pointer;
+    background-image: url(../imagens/lay/dow1.png);
+    background-position: left;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.dowButton p{font-weight: bolder; margin-top: 0px;}
+.dowButtonbk{background-image: url(../imagens/lay/dow2.png);}
+.dowButton span{
+    font-size: 8px;
+    font-weight: lighter;
+}
+.gridPai {
+    margin-top: 200px;
+    display: grid;
+    width: 100%;
+    gap: 100px;
+}
+.gridCont{
+    text-align: center;
+}
+.gridCont img{
+    width: 150px;
+}
+.gridCont:hover {
+    animation: hoverfoco 3s infinite alternate;
+}
+.gridCont:hover img{
+    animation: imghover 1s infinite alternate;
+}
+.gridPre{
+    position: relative;
+}
+.gridPre p{
+    font-size: 35px;
+    font-weight: lighter;
+    width: 50%;
+    color: #5b0b9e;
+}
+.gridPre img{
+    position: absolute;
+    left: 100%;
+}
+@media (max-width: 768px) {
+    .conteudos{
+        width: 16rem;
+    }
+    .gridPai {
+        display: inline;
+
+    }
+    header nav{
+        display: none !important;
+    }
+    .end {
+        align-self: center;
+    }
+    .backg,.bckl{
+        display: none;
+    }
+}
+.tit {
+    grid-column-start: 2;
+    grid-column-end: 5;
+}
+.conteudos h3 {
+    color: #4f0f9b;
+}
+.conteudos h1 {
+    font-size: 40px;
+    color: #4f0f9b;
+    margin: 0;
+    padding-bottom: 50px;
+    padding-right: 100px;
+}
+.conteudos h2 {
+    color: #4f0f9b;
+    padding-right: 220px;
+}
+.conteudos p {
+    font-size: 12px;
+    margin-bottom: 50px;
+}
+.btnlin {
+    padding: 10px;
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: #ffffff;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    background-image: linear-gradient(to right, #5b6eee, #27e0fc);
+}
+.conteudos p button {
+    color: #4f0f9b;
+    font-weight: bold;
+    padding-bottom: 10px;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+button .linhaReta {
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    margin: 0;
+}
+button .linhaReta::after {
+    width: 10px;
+    height: 3px;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.backg,.bckl{
+    position: absolute;
+    height: 600px;
+    width: 0;
+    top: 0;
+    right: 0;
+
+}
+.bkri{left: -66px;}
+.bckl{
+    width: calc(100% + 210px);
+    right: -140px;
+    
+}
+.surgiri{
+    width: max-content;
+    animation: imgs 1s linear;
+}
+@keyframes imgs {
+    0% {
+        width: 0px;
+    }
+    100% {
+        width: 450px;
+    }
+}
+@keyframes imghover {
+    0% {
+        transform: skewX(0deg);
+    }
+    100% {
+        transform: skewX(10deg);
+    }
+}
+@keyframes hoverfoco {
+    0% {
+        transform: scale3d(1, 1,1);
+}
+    100% {
+        transform: scale3d(1.1, 1.1,0.5);
+    }
+}
+/* rodape */
+
+footer {
+    background-image: url(../imagens/lay/fundo-footer-teste-programador.png.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+footer .logo {
+    filter: brightness(100);
+    min-width: 90px;
+}
+
+footer h5 {
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    font-size: 25px;
+    font-weight: lighter;
+    margin-bottom: 10px;
+}
+
+footer ul {
+    list-style: none;
+    margin-left: 12%;
+}
+footer ul li {
+    width: 100%;
+    height: 35px;
+    font-size: 12px;
+}
+.imgli img{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+.imgli{
+    display: flex;
+    align-items: center;
+}
+.redes{
+    height: 40px;
+    margin: 0 70px 10px 70px;
+    padding-top: 20px;
+    border-top: #ffffff 2px solid;
+    display: flex;
+    justify-content: space-between;
+}
+.redes p{
+    color: #ffffff;
+    font-size: 12px;
+}
+.redes img{
+    width: 15px;
+    height: 15px;
+}
+footer .nli {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10vmax;
+}
