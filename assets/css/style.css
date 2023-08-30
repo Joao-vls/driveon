@@ -91,7 +91,7 @@ header nav a {
 main {
     margin: 10px 70px 0 70px;
     position: relative;
-    padding-bottom: 60em;
+    padding-bottom: 10%;
     display: flex;
     flex-direction: column;
 }
@@ -316,7 +316,6 @@ footer {
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
-    bottom: 0;
     width: 100%;
 }
 
